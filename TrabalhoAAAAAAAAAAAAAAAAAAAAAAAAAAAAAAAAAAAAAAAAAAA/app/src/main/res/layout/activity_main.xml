@@ -16,7 +16,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="30dp"
+            >
 
                     <TextView
 
@@ -24,6 +26,7 @@
                         android:layout_height="wrap_content"
                         android:text="Nome"
                         android:id="@+id/nome_view"
+                        android:textSize="25sp"
 
                         />
 
@@ -32,6 +35,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/nome_edit"
+                        android:layout_marginBottom="30dp"
 
                         />
 
@@ -41,6 +45,7 @@
                         android:layout_height="wrap_content"
                         android:text="Email"
                         android:id="@+id/email_view"
+                        android:textSize="25sp"
 
                         />
 
@@ -49,6 +54,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/email_edit"
+                        android:layout_marginBottom="30dp"
 
                         />
 
@@ -58,6 +64,7 @@
                         android:layout_height="wrap_content"
                         android:text="Idade"
                         android:id="@+id/idade_view"
+                        android:textSize="25sp"
 
                         />
 
@@ -66,6 +73,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/idade_edit"
+                        android:layout_marginBottom="30dp"
 
                         />
 
@@ -75,6 +83,7 @@
                         android:layout_height="wrap_content"
                         android:text="Disciplina"
                         android:id="@+id/disc_view"
+                        android:textSize="25sp"
 
                         />
 
@@ -83,6 +92,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/disc_edit"
+                        android:layout_marginBottom="30dp"
 
                         />
 
@@ -92,6 +102,7 @@
                         android:layout_height="wrap_content"
                         android:text="Nota 1º Bimestre"
                         android:id="@+id/nota1_view"
+                        android:textSize="25sp"
 
                         />
 
@@ -100,6 +111,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/nota1_edit"
+                        android:layout_marginBottom="30dp"
+
 
                         />
 
@@ -109,6 +122,7 @@
                         android:layout_height="wrap_content"
                         android:text="Nota 2º Bimestre"
                         android:id="@+id/nota2_view"
+                        android:textSize="25sp"
 
                         />
 
@@ -117,6 +131,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/nota2_edit"
+                        android:layout_marginBottom="30dp"
+
 
                         />
 
@@ -127,6 +143,7 @@
                         android:text="Enviar"
                         android:layout_gravity="center"
                         android:id="@+id/enviar_bt"
+                        android:textSize="25sp"
 
                         />
 
@@ -137,6 +154,7 @@
                         android:text="Limpar"
                         android:layout_gravity="center"
                         android:id="@+id/limpar_bt"
+                        android:textSize="25sp"
 
                         />
 
@@ -145,6 +163,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/res_view"
+                        android:textSize="25sp"
+                        android:layout_marginBottom="30dp"
 
                         />
 

@@ -52,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
                 res_view.setText("");
 
-                res_view.setHeight(0);
-
                 if(checar_nome() && checar_email() && checar_idade() && checar_disc() && checar_notas())
                 {
 
@@ -169,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
     boolean checar_notas()
     {
 
-        if((!(nota1_edit.getText().toString().isEmpty()) && (Double.parseDouble(nota1_edit.getText().toString()) >= 0 && Double.parseDouble(nota1_edit.getText().toString()) <= 10)) && (!(nota2_edit.getText().toString().isEmpty()) && (Double.parseDouble(nota2_edit.getText().toString()) >= 0 && Double.parseDouble(nota2_edit.getText().toString()) <= 10)))
+        if((!(nota1_edit.getText().toString().isEmpty()) && (!(contem_string(nota1_edit.getText().toString()))) && (Double.parseDouble(nota1_edit.getText().toString()) >= 0 && Double.parseDouble(nota1_edit.getText().toString()) <= 10)) && (!(nota2_edit.getText().toString().isEmpty()) && (!(contem_string(nota2_edit.getText().toString()))) && (Double.parseDouble(nota2_edit.getText().toString()) >= 0 && Double.parseDouble(nota2_edit.getText().toString()) <= 10)))
         {
 
             return true;
@@ -183,6 +181,12 @@ public class MainActivity extends AppCompatActivity {
             return false;
 
         }
+
+    }
+
+    public boolean contem_string(String str) {
+
+        return !str.matches("\\d+");
 
     }
 
