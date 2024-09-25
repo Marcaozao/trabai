@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
     boolean checar_idade()
     {
 
-        if(!(idade_edit.getText().toString().isEmpty()) && Integer.parseInt(idade_edit.getText().toString()) >= 0)
+        if(!(idade_edit.getText().toString().isEmpty()) && !(contem_string(idade_edit.getText().toString())) && Integer.parseInt(idade_edit.getText().toString()) >= 0)
         {
 
             return true;
