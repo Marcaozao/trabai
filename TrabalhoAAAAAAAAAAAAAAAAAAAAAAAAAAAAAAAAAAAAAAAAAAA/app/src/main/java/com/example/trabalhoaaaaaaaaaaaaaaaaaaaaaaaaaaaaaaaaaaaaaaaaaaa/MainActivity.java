@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
         else
         {
 
-            res_view.setText("O campo de notas deve conter um valor entre 0 e 10");
+            res_view.setText("O campo de notas deve conter um valor entre 0 e 10!\nA operação de calcular a média só irá ser realizada se todas as notas foremválidas.");
 
             return false;
 
