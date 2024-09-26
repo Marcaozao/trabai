@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
     boolean checar_email()
     {
 
-        if(email_edit.getText().toString().contains("@"))
+        if(email_edit.getText().toString().contains("@") && email_edit.getText().toString().indexOf("@") > 5)
         {
 
             return true;
